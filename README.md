@@ -25,6 +25,7 @@ npm install hapi-swaggered-ui
   * `supportedSubmitMethods`: Routes which differ will be listed as readonly - default: ['get', 'post', 'put', 'patch', 'delete', 'head']
   * `highlightSizeThreshold`: Any size response below this threshold will be highlighted syntactically, attempting to highlight large responses can lead to browser hangs, not including a threshold will default to highlight all returned responses.
   * `validatorUrl`: By default, Swagger-UI attempts to validate specs against swagger.io's online validator (disabled for localhost). You can use this parameter to set a different validator URL, for example for locally deployed validators (Validator Badge). Setting it to false will disable validation. This parameter is relevant for Swagger 2.0 specs only.
+  * `suppressTagNameInTagGroupHeader`: (LeisureLink custom feature) Set to true to show only the tag description in each endpoint tag-group header.  Omit to render the default <tag name> : <tag description> group header.
 * `authorization`: object - can be null or false to disable authorization through swagger-ui (e.g. in case of public apis without auth)
   * `scope`: string, 'query' or 'header'
   * `field`: string, name of the field
